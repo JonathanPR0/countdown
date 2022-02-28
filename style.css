@@ -1,0 +1,156 @@
+:root {
+  --black: #4d4c59;
+  --purple: #6c63ff;
+  --light-grey: #c8c8c8;
+  --text-color: #9c9ab6;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 60px;
+  background: url(./images/top-image.svg) top no-repeat,
+    url(./images/bottom-image.svg) bottom no-repeat;
+}
+img {
+  min-width: 30vw;
+}
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 5vw;
+}
+section h1 {
+  font-size: 36px;
+  font-weight: 500;
+  color: var(--purple);
+}
+section p {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--text-color);
+}
+section a {
+  min-width: 160px;
+  margin-top: 30px;
+  padding: 14px;
+  text-align: center;
+  background-color: var(--purple);
+  color: #ffffff;
+  border-radius: 10px;
+}
+div#timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  min-width: 500px;
+}
+.countdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.countdown p {
+  margin-right: 30px;
+}
+.countdown:last-child p {
+  margin-right: 0;
+}
+.countdown h2 {
+  font-size: 72px;
+  font-weight: 400;
+  color: var(--black);
+}
+.countdown h2 span {
+  margin: 0 10px;
+}
+
+section#modal-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgba(0, 0, 0, 0.7);
+
+  opacity: 0;
+  visibility: hidden;
+}
+section#modal-container.active {
+  opacity: 1;
+  visibility: visible;
+}
+#modal {
+  display: flex;
+  position: absolute;
+  min-width: 30vw;
+  min-height: 35vh;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fafafa;
+  color: var(--black);
+  border-radius: 10px;
+  padding: 30px 15px;
+}
+#modal h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+#modal form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#modal form input {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px 0 10px 0;
+  background-color: #f1f1f1;
+}
+#modal form button {
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--purple);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+}
+button#close {
+  position: absolute;
+  cursor: pointer;
+  top: -15px;
+  right: -15px;
+  width: 45px;
+  height: 45px;
+  padding: 10px;
+  border-radius: 50%;
+  border: 5px solid #ffffff;
+  background-color: var(--purple);
+  color: #ffffff;
+}

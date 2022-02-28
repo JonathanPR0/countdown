@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>Countdown</title>
+</head>
+
+<body>
+  <main>
+    <section>
+      <h1>Ready to launch in...</h1>
+      <div id="timer">
+        <div class="countdown">
+          <p>Dias</p>
+          <h2 id="days"><span>:</span></h2>
+        </div>
+        <div class="countdown">
+          <p>Horas</p>
+          <h2 id="hours"><span>:</span></h2>
+        </div>
+        <div class="countdown">
+          <p>Minutos</p>
+          <h2 id="minutes"><span>:</span></h2>
+        </div>
+        <div class="countdown">
+          <p>Segundos</p>
+          <h2 id="seconds"></h2>
+        </div>
+      </div>
+      <p>Inscreva-se para saber mais sobre o lançamento</p>
+      <a href="/" id="sing-up">Inscreva-se</a>
+    </section>
+    <img src="./images/rocket.svg" alt="Rocket">
+  </main>
+  <section id="modal-container">
+    <div id="modal">
+      <button id="close">X</button>
+      <h3>Insira os seguintes dados</h3>
+      <form action="">
+        <label for="name">Nome:</label>
+        <input type="text" name="name" id="name">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+        <button>Enviar</button>
+      </form>
+    </div>
+  </section>
+  <script src="./main.js"></script>
+</body>
+
+</html>
