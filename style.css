@@ -21,8 +21,8 @@ main {
   justify-content: center;
   height: 100vh;
   padding: 60px;
-  background: url(./images/top-image.svg) top no-repeat,
-    url(./images/bottom-image.svg) bottom no-repeat;
+  background: url(./public/top-image.svg) top no-repeat,
+    url(./public/bottom-image.svg) bottom no-repeat;
 }
 img {
   min-width: 30vw;
